@@ -1,0 +1,110 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+  }
+
+  h1, h2, h3, p {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+input {
+  border: 1px solid #f7f7f7;
+  padding: 10px;
+  font-size: 16px;
+
+}
+input:focus {
+  outline: none;
+}
+
+.form-control {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 400px;
+  font-style: italic;
+  color: #f7f7f7;
+  font-weight: 400;
+}
+
+.btn {
+  background-color: #ffb600;
+  color: black;
+  font-weight: 700;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+
+}
+
+.breweries {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin: 20%; */
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.card {
+  width: 200px;
+  border: 3px solid #ffb600;
+  margin: 10px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.brewery-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  font-weight: 500;
+  
+}
+
+.view-detail {
+  background-color: inherit;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.1)
+}
+
+.card-detail {
+  background-color: #FFBA5A;
+  color: inherit;
+  font-style: italic;
+  border-radius: 40px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.brewery-container {
+  display: flex;
+  flex-wrap: row wrap;
+  flex-direction: row;
+  width: 100%;
+  margin: 5px;
+}
+
+.brewery-img-container {
+  display: flex;
+  width: 50%;
+  margin: 15px;
+}
+
+.brewery-img {
+  width: 100%;
+}
