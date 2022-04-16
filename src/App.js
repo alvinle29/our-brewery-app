@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import { Route, Routes, useLocation, BrowserRouter } from "react-router-dom";
+import Brew from "./components/Brew"
+import Home from "./components/Home"
+import { AnimatePresence } from "framer-motion";
 
-function App() {
+
+function App(){
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="title">OUR BREWERY APP</h1>
+      <BrowserRouter>
+        
+        <AnimatePresence exitBeforeEnter>
+          <Routes>
+            <Route exact path="/" element={<Home />}/>
+            <Route path="/brew/:name" element={<Brew />} className="detail-container" />
+          </Routes>
+        </AnimatePresence>
+
+      </BrowserRouter>
     </div>
   );
 }
