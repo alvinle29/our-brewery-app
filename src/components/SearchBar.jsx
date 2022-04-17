@@ -7,19 +7,16 @@ function SearchBar () {
 
 const urlAPI = "https://api.openbrewerydb.org/breweries?by_name=";
 
-const [isLoading, setIsLoading] = useState(false);
 const [query, setQuery] = useState("");
 const [breweries, setBreweries] = useState([]);
 
 //search func
 const searchBrew = async () => {
-  setIsLoading(true);
   const url = urlAPI + query
   const res = await fetch(url);
   const data = await res.json();
   console.log(data);
   setBreweries(data);
-  setIsLoading(false);
 };
 
 useEffect(() =>{

@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import { Route, Routes, useLocation, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Brew from "./components/Brew"
 import Home from "./components/Home"
 import { AnimatePresence } from "framer-motion";
