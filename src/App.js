@@ -5,7 +5,6 @@ import Brew from "./components/Brew"
 import Home from "./components/Home"
 import { AnimatePresence } from "framer-motion";
 
-
 function App(){
   
   return (

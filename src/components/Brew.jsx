@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 function Brew(){
-    let params = useParams ();
+    let params = useParams();
     const [details, setdetails] = useState({});
     const fetchDetails = async () => {
       console.log(params.name)
